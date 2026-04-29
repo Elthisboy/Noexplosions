@@ -3,7 +3,7 @@
 ## Project Identity
 - **Name:** NoExplosions
 - **Mod ID:** `noexplosions`
-- **Version:** `1.0.0` (Resolved at build time)
+- **Version:** `1.0.0`
 
 ## Technical Summary
 The **NoExplosions** mod provides a lightweight, global kill-switch for all explosion events on a Fabric server. By utilizing Mixins (`noexplosions.mixins.json`), the mod intercepts the vanilla explosion processing logic and evaluates a centralized static boolean flag (`NoExplosions.explosionsBlocked`). This allows server operators to dynamically enable or completely disable explosion damage and block destruction (from TNT, Creepers, etc.) in real-time without needing a server restart or editing configuration files.
