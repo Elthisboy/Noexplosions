@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "noexplosions",
+	"version": "${version}",
+	"name": "NoExplosions",
+	"description": "Controla todas las explosiones con un simple comando. /explosiones para alternar, activar o desactivar.",
+	"authors": [
+		"elthisboy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/noexplosions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.elthisboy.noexplosions.NoExplosions"
+		],
+		"client": [
+			"com.elthisboy.noexplosions.NoExplosionsClient"
+		]
+	},
+	"mixins": [
+		"noexplosions.mixins.json",
+		{
+			"config": "noexplosions.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
